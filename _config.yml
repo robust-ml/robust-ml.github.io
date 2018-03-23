@@ -1,0 +1,17 @@
+# Settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+permalink: pretty
+future: true
+# safe: true # breaks local rendering if enabled
+timezone: America/New_York
+
+# Excludes
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md
