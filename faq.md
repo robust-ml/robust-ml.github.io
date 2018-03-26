@@ -5,14 +5,6 @@ title: FAQ
 
 # FAQ
 
-## Why does this page exist?
-
-Security is often a cat-and-mouse game. The purpose of this page is to help
-researchers keep track of which defenses exist and which ones are broken. A
-broken defense can no longer be considered "state-of-the-art", and it should
-not be described in literature as a working defense against adversarial
-examples without mentioning that it's broken.
-
 ## What are adversarial examples?
 
 [Szegedy et al. (2013)](https://arxiv.org/abs/1312.6199) and [Biggio et al.
@@ -21,6 +13,14 @@ are vulnerable to adversarial examples, slightly perturbed inputs that cause
 misclassification. There are lots of nuances, but that's the general idea. This
 [blog post](https://blog.openai.com/adversarial-example-research/) by OpenAI is
 a nice introduction to the topic.
+
+## Why does this page exist?
+
+Security is often a cat-and-mouse game. The purpose of this page is to help
+researchers keep track of which defenses exist and which ones are broken. A
+broken defense can no longer be considered "state-of-the-art", and it should
+not be described in literature as a working defense against adversarial
+examples without mentioning that it's broken.
 
 ## Which defenses are included?
 

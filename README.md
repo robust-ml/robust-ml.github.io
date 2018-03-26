@@ -1,4 +1,4 @@
-# Adversarial Defenses
+# Adversarial Example Defenses
 
 A catalog of defenses against adversarial examples, paired with attacks that
 break them (where applicable).
