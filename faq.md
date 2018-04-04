@@ -30,16 +30,16 @@ either made source code available or are broken.
 ## How do I submit an update / correction?
 
 This website is open-source. Please open an
-[issue](https://github.com/adversarial-defenses/adversarial-defenses.github.io/issues)
+[issue](https://github.com/robust-ml/robust-ml.github.io/issues)
 or submit a [pull
-request](https://github.com/adversarial-defenses/adversarial-defenses.github.io/pulls)
+request](https://github.com/robust-ml/robust-ml.github.io/pulls)
 with your proposed change.
 
 ## How is this list maintained?
 
 This is a community-maintained document, open-source on
-[GitHub](https://github.com/adversarial-defenses/adversarial-defenses.github.io).
+[GitHub](https://github.com/robust-ml/robust-ml.github.io).
 All updates to the site are
-[auditable](https://github.com/adversarial-defenses/adversarial-defenses.github.io/commits/master),
+[auditable](https://github.com/robust-ml/robust-ml.github.io/commits/master),
 and all discussions related to content are also publicly visible (as GitHub
 issues / pull requests).
