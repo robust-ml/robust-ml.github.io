@@ -1,0 +1,8 @@
+- name: Home
+  url: /
+- name: Adversarial Example Defenses
+  url: /defenses/
+- name: Preprints
+  url: /preprints/
+- name: FAQ
+  url: /faq/
