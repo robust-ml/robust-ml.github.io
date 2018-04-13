@@ -3,11 +3,48 @@
   name: Towards Deep Learning Models Resistant to Adversarial Attacks
   url: https://arxiv.org/abs/1706.06083
   authors: Madry et al.
-  code: https://github.com/MadryLab/cifar10_challenge
+  code: https://github.com/MadryLab/cifar10_challenge # TODO link to the one that implements the robustml interface
   venue: ICLR 2018
   venue_date: 2018-04-30
   dataset: CIFAR-10
   threat_model: $$\ell_\infty$$
   claims: >
     47% accuracy with $$\ell_\infty$$ perturbation of $$\epsilon = 8/255$$
-  analyses: null
+  analyses:
+-
+  name: "Thermometer Encoding: One Hot Way To Resist Adversarial Examples"
+  url: https://openreview.net/forum?id=S18Su--CW
+  authors: Buckman et al.
+  code: https://github.com/anishathalye/obfuscated-gradients/tree/master/thermometer # TODO link to a reimplementation that implements the robustml interface
+  venue: ICLR 2018
+  venue_date: 2018-04-30
+  dataset: CIFAR-10
+  threat_model: $$\ell_\infty$$
+  claims: >
+    79% accuracy with $$\ell_\infty$$ perturbation of $$\epsilon = 8/255$$
+  analyses:
+-
+  name: Characterizing Adversarial Subspaces Using Local Intrinsic Dimensionality
+  url: https://arxiv.org/abs/1801.02613
+  authors: Ma et al.
+  code: https://github.com/xingjunm/lid_adversarial_subspace_detection # TODO link to the one that implements the robustml interface
+  venue: ICLR 2018
+  venue_date: 2018-04-30
+  dataset: CIFAR-10
+  threat_model: $$\ell_\infty$$
+  claims: >
+    95.7% attack failure rate on CIFAR-10 with unspecified perturbation bound
+  analyses:
+-
+  name: Countering Adversarial Images using Input Transformations
+  url: https://arxiv.org/abs/1711.00117
+  authors: Guo et al.
+  code: https://github.com/facebookresearch/adversarial_image_defenses # TODO link to the one that implements the robustml interface
+  venue: ICLR 2018
+  venue_date: 2018-04-30
+  dataset: ImageNet
+  threat_model: $$\ell_2$$
+  claims: >
+    70% accuracy on ImageNet with average normalized $$\ell_2$$ perturbation of
+    0.06
+  analyses:
