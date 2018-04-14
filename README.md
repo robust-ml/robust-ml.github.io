@@ -11,15 +11,13 @@ issue or submitting a pull request.
 More information is available in the FAQ:
 http://www.robust-ml.org/faq/
 
-## Advisory Committee
+## Authors
 
-This is a community-maintained resource. The following people are members of
-the advisory committee, which is responsible for reviewing edits to the website
-and [robustml](https://github.com/robust-ml/robustml) package.
+This is a community-maintained resource. See the [homepage] for a list of the
+people who help maintain the website and [robustml] package.
 
-TODO
-
-(in alphabetical order)
+[homepage]: http://www.robust-ml.org/
+[robustml]: https://github.com/robust-ml/robustml
 
 ## Development
 
