@@ -29,3 +29,7 @@ Run `bundle exec jekyll build` to build the site.
 
 For development purposes, it can be handy to run `bundle exec jekyll serve
 --watch`. You will be able to preview the website at http://localhost:4000.
+
+## License
+
+Licensed under [CC BY-SA 4.0](LICENSE.txt).
