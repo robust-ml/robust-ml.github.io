@@ -18,7 +18,7 @@ Advisory Board:
 
 Editors:
 
-* Aleksander Mądry (MIT)
-* Anish Athalye (MIT)
-* Dimitris Tsipras (MIT)
-* Logan Engstrom (MIT)
+* Aleksander Mądry
+* Anish Athalye
+* Dimitris Tsipras
+* Logan Engstrom
