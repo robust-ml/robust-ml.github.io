@@ -14,12 +14,11 @@ activities.
 
 ---
 
-Advisors:
+Advisory Board:
+
+Editors:
 
 * Aleksander Mądry (MIT)
-
-Authors:
-
 * Anish Athalye (MIT)
-* Logan Engstrom (MIT)
 * Dimitris Tsipras (MIT)
+* Logan Engstrom (MIT)
