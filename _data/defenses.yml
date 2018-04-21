@@ -12,39 +12,54 @@
     47% accuracy
   analyses:
 -
-  name: "Thermometer Encoding: One Hot Way To Resist Adversarial Examples"
-  url: https://openreview.net/forum?id=S18Su--CW
-  authors: Buckman et al.
-  code: https://github.com/anishathalye/obfuscated-gradients/tree/master/thermometer # TODO link to a reimplementation that implements the robustml interface
-  venue: ICLR 2018
-  venue_date: 2018-04-30
-  dataset: CIFAR-10
-  threat_model: $$\ell_\infty (\epsilon = 8/255)$$
-  claims: >
-    79% accuracy
-  analyses:
--
-  name: Characterizing Adversarial Subspaces Using Local Intrinsic Dimensionality
-  url: https://arxiv.org/abs/1801.02613
-  authors: Ma et al.
-  code: https://github.com/xingjunm/lid_adversarial_subspace_detection # TODO link to the one that implements the robustml interface
-  venue: ICLR 2018
-  venue_date: 2018-04-30
-  dataset: CIFAR-10
-  threat_model: $$\ell_\infty (\epsilon \text{ unspecified})$$
-  claims: >
-    95.7% attack failure rate
-  analyses:
--
-  name: Countering Adversarial Images using Input Transformations
-  url: https://arxiv.org/abs/1711.00117
-  authors: Guo et al.
-  code: https://github.com/facebookresearch/adversarial_image_defenses # TODO link to the one that implements the robustml interface
+  name: Mitigating Adversarial Effects Through Randomization
+  url: https://arxiv.org/abs/1711.01991
+  authors: Xie et al.
+  code: https://github.com/anishathalye/obfuscated-gradients/tree/robustml/randomization
   venue: ICLR 2018
   venue_date: 2018-04-30
   dataset: ImageNet
-  threat_model: $$\ell_2 (\epsilon = 0.06)$$
+  threat_model: $$\ell_\infty (\epsilon = 10/255)$$
   claims: >
-    70% accuracy on ImageNet with average normalized $$\ell_2$$ perturbation of
-    0.06
+    86% accuracy (on images originally classified correctly)
   analyses:
+    - name: "Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples"
+      url: https://arxiv.org/abs/1802.00420
+      code: https://github.com/anishathalye/obfuscated-gradients/tree/robustml/randomization
+# -
+#   name: "Thermometer Encoding: One Hot Way To Resist Adversarial Examples"
+#   url: https://openreview.net/forum?id=S18Su--CW
+#   authors: Buckman et al.
+#   code: https://github.com/anishathalye/obfuscated-gradients/tree/master/thermometer # TODO link to a reimplementation that implements the robustml interface
+#   venue: ICLR 2018
+#   venue_date: 2018-04-30
+#   dataset: CIFAR-10
+#   threat_model: $$\ell_\infty (\epsilon = 8/255)$$
+#   claims: >
+#     79% accuracy
+#   analyses:
+# -
+#   name: Characterizing Adversarial Subspaces Using Local Intrinsic Dimensionality
+#   url: https://arxiv.org/abs/1801.02613
+#   authors: Ma et al.
+#   code: https://github.com/xingjunm/lid_adversarial_subspace_detection # TODO link to the one that implements the robustml interface
+#   venue: ICLR 2018
+#   venue_date: 2018-04-30
+#   dataset: CIFAR-10
+#   threat_model: $$\ell_\infty (\epsilon \text{ unspecified})$$
+#   claims: >
+#     95.7% attack failure rate
+#   analyses:
+# -
+#   name: Countering Adversarial Images using Input Transformations
+#   url: https://arxiv.org/abs/1711.00117
+#   authors: Guo et al.
+#   code: https://github.com/facebookresearch/adversarial_image_defenses # TODO link to the one that implements the robustml interface
+#   venue: ICLR 2018
+#   venue_date: 2018-04-30
+#   dataset: ImageNet
+#   threat_model: $$\ell_2 (\epsilon = 0.06)$$
+#   claims: >
+#     70% accuracy on ImageNet with average normalized $$\ell_2$$ perturbation of
+#     0.06
+#   analyses:

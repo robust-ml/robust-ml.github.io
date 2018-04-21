@@ -7,3 +7,12 @@ h2 {
 .container {
   margin-bottom: 2rem;
 }
+
+ul.analyses {
+  margin: 0;
+  padding-left: inherit;
+}
+
+.analyses li:not(:first-child) {
+  margin-top: 0.5rem;
+}

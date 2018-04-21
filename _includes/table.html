@@ -21,7 +21,12 @@
         <td>{{ row.dataset }}</td>
         <td>{{ row.threat_model }}</td>
         <td>{{ row.claims | markdownify }}</td>
-        <td>{{ row.analyses | markdownify }}</td>
+        <td>
+          <ul class="analyses">
+          {% for analysis in row.analyses %}
+            <li><a href="{{ analysis.url }}">{{ analysis.name }}</a> (<a href="{{ analysis.code }}">code</a>)</li>
+          {% endfor %}
+        </td>
       </tr>
     {% endfor %}
   </tbody>
@@ -33,7 +38,7 @@
       responsive: true,
       paging: false,
       info: false,
-      order: [[1, 'desc'], [0, 'asc']],
+      order: [[1, 'desc']],
     });
   });
 </script>
