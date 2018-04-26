@@ -1,4 +1,49 @@
 -
+  name: Distillation as a Defense to Adversarial Perturbations against Deep Neural Networks
+  url: https://arxiv.org/abs/1511.04508
+  authors: Papernot et al.
+  code: https://github.com/carlini/breaking_defensive_distillation # TODO link to something that implements robustml
+  venue: S&P 2016
+  venue_date: 2016-05-23
+  dataset: CIFAR-10
+  threat_model: $$\ell_0 (\epsilon = 112)$$
+  claims: >
+    83% accuracy
+  analyses:
+    - name: Towards Evaluating the Robustness of Neural Networks
+      url: https://arxiv.org/abs/1608.04644
+      code: https://github.com/carlini/breaking_defensive_distillation # TODO link to something that implements robustml
+-
+  name: "MagNet: a Two-Pronged Defense against Adversarial Examples"
+  url: https://arxiv.org/abs/1705.09064
+  authors: Meng & Chen
+  code: https://github.com/Trevillie/MagNet # TODO link to something that implements robustml
+  venue: CCS 2017
+  venue_date: 2017-10-30
+  dataset: CIFAR-10
+  threat_model: $$\ell_\infty (\epsilon = 0.025)$$
+  claims: >
+    99% accuracy (on images originally classified correctly)
+  analyses:
+    - name: 'MagNet and "Efficient Defenses Against Adversarial Attacks" are Not Robust to Adversarial Examples'
+      url: https://arxiv.org/abs/1711.08478
+      code: https://github.com/carlini/MagNet # TODO link to something that implements robustml
+-
+  name: "Efficient Defenses Against Adversarial Attacks"
+  url: https://arxiv.org/abs/1707.06728
+  authors: Zantedeschi et al.
+  code: https://github.com/carlini/breaking_efficient_defenses # TODO link to something that implements robustml
+  venue: AISec 2017
+  venue_date: 2017-11-03
+  dataset: CIFAR-10
+  threat_mode: $$\ell_\infty (\epsilon = 0.3)$$
+  claims: >
+    50% accuracy
+  analyses:
+    - name: 'MagNet and "Efficient Defenses Against Adversarial Attacks" are Not Robust to Adversarial Examples'
+      url: https://arxiv.org/abs/1711.08478
+      code: https://github.com/carlini/breaking_efficient_defenses # TODO link to something that implements robustml
+-
   name: Deflecting Adversarial Attacks with Pixel Deflection
   url: https://arxiv.org/abs/1801.08926
   authors: Prakash et al.
