@@ -10,8 +10,8 @@
   claims: >
     83% accuracy
   analyses:
-    - name: Towards Evaluating the Robustness of Neural Networks
-      url: https://arxiv.org/abs/1608.04644
+    - claims: 0% accuracy
+      citation: CW16
       code: https://github.com/carlini/breaking_defensive_distillation # TODO link to something that implements robustml
 -
   name: "MagNet: a Two-Pronged Defense against Adversarial Examples"
@@ -21,11 +21,12 @@
   venue: CCS 2017
   venue_date: 2017-10-30
   dataset: CIFAR-10
-  threat_model: $$\ell_\infty (\epsilon = 0.025)$$
+  threat_model: $$\ell_2 (\epsilon = \text{unspecified})$$
   claims: >
     99% accuracy (on images originally classified correctly)
   analyses:
-    - name: 'MagNet and "Efficient Defenses Against Adversarial Attacks" are Not Robust to Adversarial Examples'
+    - claims: 0% accuracy
+      citation: CW17
       url: https://arxiv.org/abs/1711.08478
       code: https://github.com/carlini/MagNet # TODO link to something that implements robustml
 -
@@ -36,11 +37,12 @@
   venue: AISec 2017
   venue_date: 2017-11-03
   dataset: CIFAR-10
-  threat_mode: $$\ell_\infty (\epsilon = 0.3)$$
+  threat_model: $$\ell_2 (\epsilon = \text{unspecified})$$
   claims: >
-    50% accuracy
+    76% accuracy
   analyses:
-    - name: 'MagNet and "Efficient Defenses Against Adversarial Attacks" are Not Robust to Adversarial Examples'
+    - claims: 0% accuracy
+      citation: CW17
       url: https://arxiv.org/abs/1711.08478
       code: https://github.com/carlini/breaking_efficient_defenses # TODO link to something that implements robustml
 -
@@ -55,7 +57,8 @@
   claims: >
     81% accuracy (on images originally classified correctly)
   analyses:
-    - name: "On the Robustness of the CVPR 2018 White-Box Adversarial Example Defenses"
+    - claims: 0% accuracy
+      citation: AC18
       url: https://arxiv.org/abs/1804.03286
       code: https://github.com/carlini/pixel-deflection # TODO link to an attack that implements the robustml interface
 -
@@ -70,7 +73,8 @@
   claims: >
     75% accuracy
   analyses:
-    - name: "On the Robustness of the CVPR 2018 White-Box Adversarial Example Defenses"
+    - claims: 0% accuracy
+      citation: AC18
       url: https://arxiv.org/abs/1804.03286
       code: https://github.com/anishathalye/guided-denoise # TODO link to an attack that implements the robustml interface
 -
@@ -97,7 +101,8 @@
   claims: >
     86% accuracy (on images originally classified correctly)
   analyses:
-    - name: "Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples"
+    - claims: 0% accuracy
+      citation: ACW18
       url: https://arxiv.org/abs/1802.00420
       code: https://github.com/anishathalye/obfuscated-gradients/tree/robustml/randomization
 -
@@ -112,7 +117,8 @@
   claims: >
     79% accuracy
   analyses:
-    - name: "Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples"
+    - claims: 0% accuracy
+      citation: ACW18
       url: https://arxiv.org/abs/1802.00420
       code: https://github.com/anishathalye/obfuscated-gradients/tree/master/thermometer # TODO link to attack that implements the robustml interface
 -
@@ -128,7 +134,8 @@
     70% accuracy on ImageNet with average normalized $$\ell_2$$ perturbation of
     0.06
   analyses:
-    - name: "Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples"
+    - claims: 0% accuracy
+      citation: ACW18
       url: https://arxiv.org/abs/1802.00420
       code: https://github.com/anishathalye/obfuscated-gradients/tree/master/inputtransformations # TODO link to attack that implements the robustml interface
 -
@@ -143,7 +150,8 @@
   claims: >
     80% accuracy
   analyses:
-    - name: "Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples"
+    - claims: 0% accuracy
+      citation: ACW18
       url: https://arxiv.org/abs/1802.00420
       code: https://github.com/anishathalye/obfuscated-gradients/tree/master/sap # TODO link to attack that implements the robustml interface
 -
@@ -158,7 +166,8 @@
   claims: >
     70% accuracy
   analyses:
-    - name: "Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples"
+    - claims: 9% accuracy
+      citation: ACW18
       url: https://arxiv.org/abs/1802.00420
       code: https://github.com/anishathalye/obfuscated-gradients/tree/master/pixeldefend # TODO link to attack that implements the robustml interface
 -
@@ -169,10 +178,11 @@
   venue: ICLR 2018
   venue_date: 2018-04-30
   dataset: MNIST
-  threat_model: $$\ell_\infty (\epsilon = 0.3)$$
+  threat_model: $$\ell_2 (\epsilon = \text{unspecified})$$
   claims: >
-    47% accuracy
+    92% accuracy
   analyses:
-    - name: "Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples"
+    - claims: 55% accuracy
+      citation: ACW18
       url: https://arxiv.org/abs/1802.00420
       code: https://github.com/anishathalye/obfuscated-gradients/tree/master/defensegan # TODO link to attack that implements the robustml interface

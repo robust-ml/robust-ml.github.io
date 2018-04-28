@@ -24,7 +24,7 @@
         <td>
           <ul class="analyses">
           {% for analysis in row.analyses %}
-            <li><a href="{{ analysis.url }}">{{ analysis.name }}</a> (<a href="{{ analysis.code }}">code</a>)</li>
+            <li>{{ analysis.claims }} [<a href="{{ analysis.url }}">{{ analysis.citation }}</a>] (<a href="{{ analysis.code }}">code</a>)</li>
           {% endfor %}
         </td>
       </tr>
