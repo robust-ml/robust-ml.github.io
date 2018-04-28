@@ -39,6 +39,11 @@
       paging: false,
       info: false,
       order: [[1, 'desc']],
+      drawCallback: function(settings) {
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+      },
+    }).on('responsive-display', function() {
+      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
     });
   });
 </script>
