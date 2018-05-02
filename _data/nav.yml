@@ -1,6 +1,6 @@
 - name: Home
   url: /
-- name: Adversarial Example Defenses
+- name: Published Defenses
   url: /defenses/
 - name: Preprints
   url: /preprints/
