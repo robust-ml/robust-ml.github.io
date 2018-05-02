@@ -7,6 +7,13 @@ title: FAQ
 
 ## Which defenses are included?
 
+Currently, we list defenses that are claimed to be secure in the white-box
+model. Defenses that only aim to be secure in an oblivious attacker / black-box
+/ grey-box model, but not in a white-box model, are out of scope. It is unclear
+how to properly evaluate such defenses, as it is challenging to model lack of
+awareness of a defense (or part of a defense) being in place. In the future, we
+may expand to include more threat models.
+
 We maintain two lists: one for [published defenses][defenses] and one for
 [unpublished defenses][preprints]. Both contain defenses for the white-box
 threat model that have open source code that implements the [robustml
