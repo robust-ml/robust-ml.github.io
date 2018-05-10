@@ -6,8 +6,8 @@ kramdown:
 highlighter: rouge
 permalink: pretty
 future: true
-# safe: true # breaks local rendering if enabled
 timezone: America/New_York
+repository: "robust-ml/robust-ml.github.io"
 
 # Excludes
 exclude:
@@ -15,3 +15,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+
+plugins:
+  - "jekyll-github-metadata"

@@ -16,3 +16,14 @@ ul.analyses {
 .analyses li:not(:first-child) {
   margin-top: 0.5rem;
 }
+
+#footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 1rem;
+  color: #aaa;
+  font-size: 0.75rem;
+}
+
+#footer a {
+  color: #99caff;
+}
