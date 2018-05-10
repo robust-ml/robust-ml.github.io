@@ -16,8 +16,8 @@ may expand to include more threat models.
 
 We maintain two lists: one for [published defenses][defenses] and one for
 [unpublished defenses][preprints]. Both contain defenses for the white-box
-threat model that have open source code that implements the [robustml
-API][robustml].
+threat model that are open-source, implement the [robustml API][robustml], and
+have pre-trained models available.
 
 In the absence of first-party implementations, we accept third-party
 implementations. If a first-party implementation for a listed defense becomes
@@ -26,9 +26,10 @@ the update).
 
 ## How are new defenses added to the list?
 
-Defenses must be open-sourced and implement the robustml API to be eligible to
-be added to the list. See [here][instructions] for instructions. Please submit
-a [pull request][pulls] to add a new defense to the list.
+Defenses must be open-sourced, implement the robustml API, and have a
+pre-trained model available to be eligible to be added to the list. See
+[here][instructions] for instructions. Please submit a [pull request][pulls] to
+add a new defense to the list.
 
 By default, we list a single claim from the paper (for the “largest” dataset).
 Authors can list up to 3 claims, with a single claim allowed for a (dataset,
