@@ -16,6 +16,11 @@ activities.
 
 Advisory Board:
 
+* David Wagner
+* Nicholas Carlini
+* Percy Liang
+* Zico Kolter
+
 Editors:
 
 * Aleksander Mądry
