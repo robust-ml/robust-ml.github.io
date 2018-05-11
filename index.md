@@ -16,14 +16,14 @@ activities.
 
 Advisory Board:
 
-* David Wagner
-* Nicholas Carlini
-* Percy Liang
-* Zico Kolter
+* David Wagner (UC Berkeley)
+* Nicholas Carlini (UC Berkeley)
+* Percy Liang (Stanford)
+* Zico Kolter (CMU)
 
 Editors:
 
-* Aleksander Mądry
-* Anish Athalye
-* Dimitris Tsipras
-* Logan Engstrom
+* Aleksander Mądry (MIT)
+* Anish Athalye (MIT)
+* Dimitris Tsipras (MIT)
+* Logan Engstrom (MIT)
