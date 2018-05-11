@@ -117,7 +117,7 @@
   claims: >
     79% accuracy # adversarially trained variant
   analyses:
-    - claims: 20% accuracy
+    - claims: 30% accuracy
       citation: ACW18
       url: https://arxiv.org/abs/1802.00420
       code: https://github.com/anishathalye/obfuscated-gradients/tree/master/thermometer # TODO link to attack that implements the robustml interface
