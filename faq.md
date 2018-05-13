@@ -14,15 +14,21 @@ how to properly evaluate such defenses, as it is challenging to model lack of
 awareness of a defense (or part of a defense) being in place. In the future, we
 may expand to include more threat models.
 
+Defenses must also have open-source code available, along with pre-trained
+models. Public availability of defenses enables third parties to more easily
+perform security analyses. In the absence of first-party implementations, we
+accept third-party implementations. If a first-party implementation for a
+listed defense becomes available, please [let us know][issues] (or submit a
+[pull request][pulls] with the update).
+
+Defenses must also implement the [robustml API][robustml]. Implementing the
+interface requires minimal additional effort, and it enables straightforward
+evaluation of attacks.
+
 We maintain two lists: one for [published defenses][defenses] and one for
 [unpublished defenses][preprints]. Both contain defenses for the white-box
-threat model that are open-source, implement the [robustml API][robustml], and
-have pre-trained models available.
-
-In the absence of first-party implementations, we accept third-party
-implementations. If a first-party implementation for a listed defense becomes
-available, please [let us know][issues] (or submit a [pull request][pulls] with
-the update).
+threat model that are open-source, implement the robustml API, and have
+pre-trained models available.
 
 ## How are new defenses added to the list?
 
