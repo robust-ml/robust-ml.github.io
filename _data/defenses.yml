@@ -7,8 +7,9 @@
   venue_date: 2016-05-23
   dataset: CIFAR-10
   threat_model: $$\ell_0 (\epsilon = 112)$$
+  natural: 81% accuracy
   claims: >
-    83% accuracy
+    17% adversary success rate in changing classifier's prediction
   analyses:
     - claims: 0% accuracy
       citation: CW16
@@ -21,9 +22,10 @@
   venue: CCS 2017
   venue_date: 2017-10-30
   dataset: CIFAR-10
-  threat_model: $$\ell_2 (\epsilon = \text{unspecified})$$
+  threat_model: $$\ell_2 (\epsilon = 0.5)$$
+  natural: 91% accuracy
   claims: >
-    99% accuracy (on images originally classified correctly)
+    83% accuracy (on images originally classified correctly)
   analyses:
     - claims: 0% accuracy
       citation: CW17
@@ -38,8 +40,9 @@
   venue_date: 2017-11-03
   dataset: CIFAR-10
   threat_model: $$\ell_2 (\epsilon = \text{unspecified})$$
+  natural: 75% accuracy
   claims: >
-    76% accuracy
+    60% accuracy
   analyses:
     - claims: 0% accuracy
       citation: CW17
@@ -54,6 +57,7 @@
   venue_date: 2018-06-19
   dataset: ImageNet
   threat_model: $$\ell_2 (\epsilon = 0.05)$$
+  natural: 98.9% accuracy (on images originally classified correctly by underlying model)
   claims: >
     81% accuracy (on images originally classified correctly)
   analyses:
@@ -70,6 +74,7 @@
   venue_date: 2018-06-19
   dataset: ImageNet
   threat_model: $$\ell_\infty (\epsilon = 4/255)$$
+  natural: 75% accuracy
   claims: >
     75% accuracy
   analyses:
@@ -86,8 +91,9 @@
   venue_date: 2018-04-30
   dataset: CIFAR-10
   threat_model: $$\ell_\infty (\epsilon = 8/255)$$
+  natural: 87% accuracy
   claims: >
-    47% accuracy
+    46% accuracy
   analyses:
 -
   name: Mitigating Adversarial Effects Through Randomization
@@ -98,6 +104,7 @@
   venue_date: 2018-04-30
   dataset: ImageNet
   threat_model: $$\ell_\infty (\epsilon = 10/255)$$
+  natural: 99.2% accuracy (on images originally classified correctly by underlying model)
   claims: >
     86% accuracy (on images originally classified correctly)
   analyses:
@@ -114,6 +121,7 @@
   venue_date: 2018-04-30
   dataset: CIFAR-10
   threat_model: $$\ell_\infty (\epsilon = 8/255)$$
+  natural: 90% accuracy
   claims: >
     79% accuracy
 # adversarially trained variant
@@ -131,6 +139,7 @@
   venue_date: 2018-04-30
   dataset: ImageNet
   threat_model: $$\ell_2 (\epsilon = 0.06)$$
+  natural: 75% accuracy
   claims: >
     70% accuracy on ImageNet with average normalized $$\ell_2$$ perturbation of
     0.06
@@ -147,9 +156,10 @@
   venue: ICLR 2018
   venue_date: 2018-04-30
   dataset: CIFAR-10
-  threat_model: $$\ell_\infty (\epsilon = 8/255)$$
+  threat_model: $$\ell_\infty (\epsilon = 4/255)$$
+  natural: 83% accuracy
   claims: >
-    80% accuracy
+    51% accuracy
   analyses:
     - claims: 0% accuracy
       citation: ACW18
@@ -164,6 +174,7 @@
   venue_date: 2018-04-30
   dataset: CIFAR-10
   threat_model: $$\ell_\infty (\epsilon = 8/255)$$
+  natural: 90% accuracy
   claims: >
     70% accuracy
   analyses:
@@ -180,6 +191,7 @@
   venue_date: 2018-04-30
   dataset: MNIST
   threat_model: $$\ell_2 (\epsilon = \text{unspecified})$$
+  natural: 99.7% accuracy
   claims: >
     92% accuracy
   analyses:

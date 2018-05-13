@@ -3,11 +3,12 @@
     <tr>
       <th data-priority="1" data-orderable="false">Defense</th>
       {% if include.published %}
-        <th data-priority="6">Venue</th>
+        <th data-priority="7">Venue</th>
       {% endif %}
       <th data-priority="3">Dataset</th>
       <th data-priority="4">Threat Model</th>
-      <th data-priority="5" data-orderable="false">Claims</th>
+      <th data-priority="6" data-orderable="false">Natural Examples</th>
+      <th data-priority="5" data-orderable="false">Adversarial Examples</th>
       <th data-priority="2" data-orderable="false">Analyses</th>
     </tr>
   </thead>
@@ -20,6 +21,7 @@
         {% endif %}
         <td>{{ row.dataset }}</td>
         <td>{{ row.threat_model }}</td>
+        <td>{{ row.natural | markdownify }}</td>
         <td>{{ row.claims | markdownify }}</td>
         <td>
           <ul class="analyses">
