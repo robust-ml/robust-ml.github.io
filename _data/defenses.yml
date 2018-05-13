@@ -115,7 +115,8 @@
   dataset: CIFAR-10
   threat_model: $$\ell_\infty (\epsilon = 8/255)$$
   claims: >
-    79% accuracy # adversarially trained variant
+    79% accuracy
+# adversarially trained variant
   analyses:
     - claims: 30% accuracy
       citation: ACW18
