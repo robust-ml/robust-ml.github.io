@@ -184,7 +184,7 @@
       code: https://github.com/anishathalye/obfuscated-gradients/tree/master/pixeldefend # TODO link to attack that implements the robustml interface
 -
   name: "Defense-GAN: Protecting Classifiers Against Adversarial Attacks Using Generative Models"
-  url: https://openreview.net/forum?id=BkJ3ibb0- # TODO is there an arxiv url?
+  url: https://arxiv.org/abs/1805.06605
   authors: Samangouei et al.
   code: https://github.com/anishathalye/obfuscated-gradients/tree/master/defensegan # TODO link to something that implements the robustml interface
   venue: ICLR 2018
