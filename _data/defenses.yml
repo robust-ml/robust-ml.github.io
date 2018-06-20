@@ -1,58 +1,61 @@
--
-  name: Distillation as a Defense to Adversarial Perturbations against Deep Neural Networks
-  url: https://arxiv.org/abs/1511.04508
-  authors: Papernot et al.
-  code: https://github.com/carlini/breaking_defensive_distillation # TODO link to something that implements robustml
-  venue: S&P 2016
-  venue_date: 2016-05-23
-  dataset: CIFAR-10
-  threat_model: $$\ell_0 (\epsilon = 112)$$
-  natural: 81% accuracy
-  claims: >
-    17% adversary success rate in changing classifier's prediction
-  analyses:
-    - claims: 0% accuracy
-      citation: CW16
-      code: https://github.com/carlini/breaking_defensive_distillation # TODO link to something that implements robustml
--
-  name: "MagNet: a Two-Pronged Defense against Adversarial Examples"
-  url: https://arxiv.org/abs/1705.09064
-  authors: Meng & Chen
-  code: https://github.com/Trevillie/MagNet # TODO link to something that implements robustml
-  venue: CCS 2017
-  venue_date: 2017-10-30
-  dataset: CIFAR-10
-  threat_model: $$\ell_2 (\epsilon = 0.5)$$
-  natural: 91% accuracy
-  claims: >
-    83% accuracy (on images originally classified correctly)
-  analyses:
-    - claims: 0% accuracy
-      citation: CW17
-      url: https://arxiv.org/abs/1711.08478
-      code: https://github.com/carlini/MagNet # TODO link to something that implements robustml
--
-  name: "Efficient Defenses Against Adversarial Attacks"
-  url: https://arxiv.org/abs/1707.06728
-  authors: Zantedeschi et al.
-  code: https://github.com/carlini/breaking_efficient_defenses # TODO link to something that implements robustml
-  venue: AISec 2017
-  venue_date: 2017-11-03
-  dataset: CIFAR-10
-  threat_model: $$\ell_2 (\epsilon = \text{unspecified})$$
-  natural: 75% accuracy
-  claims: >
-    60% accuracy
-  analyses:
-    - claims: 0% accuracy
-      citation: CW17
-      url: https://arxiv.org/abs/1711.08478
-      code: https://github.com/carlini/breaking_efficient_defenses # TODO link to something that implements robustml
+# TODO include Distillation once there is a robustml implementation for it
+#-
+  #name: Distillation as a Defense to Adversarial Perturbations against Deep Neural Networks
+  #url: https://arxiv.org/abs/1511.04508
+  #authors: Papernot et al.
+  #code: https://github.com/carlini/breaking_defensive_distillation
+  #venue: S&P 2016
+  #venue_date: 2016-05-23
+  #dataset: CIFAR-10
+  #threat_model: $$\ell_0 (\epsilon = 112)$$
+  #natural: 81% accuracy
+  #claims: >
+    #17% adversary success rate in changing classifier's prediction
+  #analyses:
+    #- claims: 0% accuracy
+      #citation: CW16
+      #code: https://github.com/carlini/breaking_defensive_distillation
+# TODO include MagNet once there is a robustml implementation for it
+#-
+  #name: "MagNet: a Two-Pronged Defense against Adversarial Examples"
+  #url: https://arxiv.org/abs/1705.09064
+  #authors: Meng & Chen
+  #code: https://github.com/Trevillie/MagNet
+  #venue: CCS 2017
+  #venue_date: 2017-10-30
+  #dataset: CIFAR-10
+  #threat_model: $$\ell_2 (\epsilon = 0.5)$$
+  #natural: 91% accuracy
+  #claims: >
+    #83% accuracy (on images originally classified correctly)
+  #analyses:
+    #- claims: 0% accuracy
+      #citation: CW17
+      #url: https://arxiv.org/abs/1711.08478
+      #code: https://github.com/carlini/MagNet
+# TODO include Efficient Defenses once there is a robustml implementation for it
+#-
+  #name: "Efficient Defenses Against Adversarial Attacks"
+  #url: https://arxiv.org/abs/1707.06728
+  #authors: Zantedeschi et al.
+  #code: https://github.com/carlini/breaking_efficient_defenses
+  #venue: AISec 2017
+  #venue_date: 2017-11-03
+  #dataset: CIFAR-10
+  #threat_model: $$\ell_2 (\epsilon = \text{unspecified})$$
+  #natural: 75% accuracy
+  #claims: >
+    #60% accuracy
+  #analyses:
+    #- claims: 0% accuracy
+      #citation: CW17
+      #url: https://arxiv.org/abs/1711.08478
+      #code: https://github.com/carlini/breaking_efficient_defenses
 -
   name: Deflecting Adversarial Attacks with Pixel Deflection
   url: https://arxiv.org/abs/1801.08926
   authors: Prakash et al.
-  code: https://github.com/iamaaditya/pixel-deflection # TODO link to something that implements robustml
+  code: https://github.com/dtsip/pixel-deflection/
   venue: CVPR 2018
   venue_date: 2018-06-19
   dataset: ImageNet
@@ -61,15 +64,16 @@
   claims: >
     81% accuracy (on images originally classified correctly)
   analyses:
-    - claims: 0% accuracy
-      citation: AC18
-      url: https://arxiv.org/abs/1804.03286
-      code: https://github.com/carlini/pixel-deflection # TODO link to an attack that implements the robustml interface
+    # TODO include once there is a robustml implementation of the attack
+    #- claims: 0% accuracy
+      #citation: AC18
+      #url: https://arxiv.org/abs/1804.03286
+      #code: https://github.com/carlini/pixel-deflection
 -
   name: Defense against Adversarial Attacks Using High-Level Representation Guided Denoiser
   url: https://arxiv.org/abs/1712.02976
   authors: Liao et al.
-  code: https://github.com/lfz/Guided-Denoise # TODO link to something that implements robustml
+  code: https://github.com/dtsip/Guided-Denoise/
   venue: CVPR 2018
   venue_date: 2018-06-19
   dataset: ImageNet
@@ -78,10 +82,11 @@
   claims: >
     75% accuracy
   analyses:
-    - claims: 0% accuracy
-      citation: AC18
-      url: https://arxiv.org/abs/1804.03286
-      code: https://github.com/anishathalye/guided-denoise # TODO link to an attack that implements the robustml interface
+    # TODO include once there is a robustml implementation of the attack
+    #- claims: 0% accuracy
+      #citation: AC18
+      #url: https://arxiv.org/abs/1804.03286
+      #code: https://github.com/anishathalye/guided-denoise
 -
   name: Towards Deep Learning Models Resistant to Adversarial Attacks
   url: https://arxiv.org/abs/1706.06083
@@ -99,7 +104,7 @@
   name: Mitigating Adversarial Effects Through Randomization
   url: https://arxiv.org/abs/1711.01991
   authors: Xie et al.
-  code: https://github.com/anishathalye/obfuscated-gradients/tree/robustml/randomization
+  code: https://github.com/anishathalye/obfuscated-gradients/tree/master/randomization
   venue: ICLR 2018
   venue_date: 2018-04-30
   dataset: ImageNet
@@ -111,12 +116,12 @@
     - claims: 0% accuracy
       citation: ACW18
       url: https://arxiv.org/abs/1802.00420
-      code: https://github.com/anishathalye/obfuscated-gradients/tree/robustml/randomization
+      code: https://github.com/anishathalye/obfuscated-gradients/tree/master/randomization
 -
   name: "Thermometer Encoding: One Hot Way To Resist Adversarial Examples"
   url: https://openreview.net/forum?id=S18Su--CW
   authors: Buckman et al.
-  code: https://github.com/anishathalye/obfuscated-gradients/tree/master/thermometer # TODO link to a reimplementation that implements the robustml interface
+  code: https://github.com/anishathalye/obfuscated-gradients/tree/master/thermometer
   venue: ICLR 2018
   venue_date: 2018-04-30
   dataset: CIFAR-10
@@ -129,12 +134,12 @@
     - claims: 30% accuracy
       citation: ACW18
       url: https://arxiv.org/abs/1802.00420
-      code: https://github.com/anishathalye/obfuscated-gradients/tree/master/thermometer # TODO link to attack that implements the robustml interface
+      code: https://github.com/anishathalye/obfuscated-gradients/tree/master/thermometer
 -
   name: Countering Adversarial Images using Input Transformations
   url: https://arxiv.org/abs/1711.00117
   authors: Guo et al.
-  code: https://github.com/facebookresearch/adversarial_image_defenses # TODO link to the one that implements the robustml interface
+  code: https://github.com/anishathalye/obfuscated-gradients/tree/master/inputtransformations
   venue: ICLR 2018
   venue_date: 2018-04-30
   dataset: ImageNet
@@ -147,12 +152,12 @@
     - claims: 0% accuracy
       citation: ACW18
       url: https://arxiv.org/abs/1802.00420
-      code: https://github.com/anishathalye/obfuscated-gradients/tree/master/inputtransformations # TODO link to attack that implements the robustml interface
+      code: https://github.com/anishathalye/obfuscated-gradients/tree/master/inputtransformations
 -
   name: Stochastic Activation Pruning for Robust Adversarial Defense
   url: https://arxiv.org/abs/1803.01442
   authors: Dhillon et al.
-  code: https://github.com/anishathalye/obfuscated-gradients/tree/master/sap # TODO link to something that implements the robustml interface
+  code: https://github.com/anishathalye/obfuscated-gradients/tree/master/sap
   venue: ICLR 2018
   venue_date: 2018-04-30
   dataset: CIFAR-10
@@ -164,12 +169,12 @@
     - claims: 0% accuracy
       citation: ACW18
       url: https://arxiv.org/abs/1802.00420
-      code: https://github.com/anishathalye/obfuscated-gradients/tree/master/sap # TODO link to attack that implements the robustml interface
+      code: https://github.com/anishathalye/obfuscated-gradients/tree/master/sap
 -
   name: "PixelDefend: Leveraging Generative Models to Understand and Defend against Adversarial Examples"
   url: https://arxiv.org/abs/1710.10766
   authors: Song et al.
-  code: https://github.com/anishathalye/obfuscated-gradients/tree/master/pixeldefend # TODO link to something that implements the robustml interface
+  code: https://github.com/anishathalye/obfuscated-gradients/tree/master/pixeldefend
   venue: ICLR 2018
   venue_date: 2018-04-30
   dataset: CIFAR-10
@@ -181,21 +186,22 @@
     - claims: 9% accuracy
       citation: ACW18
       url: https://arxiv.org/abs/1802.00420
-      code: https://github.com/anishathalye/obfuscated-gradients/tree/master/pixeldefend # TODO link to attack that implements the robustml interface
--
-  name: "Defense-GAN: Protecting Classifiers Against Adversarial Attacks Using Generative Models"
-  url: https://arxiv.org/abs/1805.06605
-  authors: Samangouei et al.
-  code: https://github.com/anishathalye/obfuscated-gradients/tree/master/defensegan # TODO link to something that implements the robustml interface
-  venue: ICLR 2018
-  venue_date: 2018-04-30
-  dataset: MNIST
-  threat_model: $$\ell_2 (\epsilon = \text{unspecified})$$
-  natural: 99.7% accuracy
-  claims: >
-    92% accuracy
-  analyses:
-    - claims: 55% accuracy
-      citation: ACW18
-      url: https://arxiv.org/abs/1802.00420
-      code: https://github.com/anishathalye/obfuscated-gradients/tree/master/defensegan # TODO link to attack that implements the robustml interface
+      code: https://github.com/anishathalye/obfuscated-gradients/tree/master/pixeldefend
+# TODO include Defense-GAN once there is a robustml implementation for it
+#-
+  #name: "Defense-GAN: Protecting Classifiers Against Adversarial Attacks Using Generative Models"
+  #url: https://arxiv.org/abs/1805.06605
+  #authors: Samangouei et al.
+  #code: https://github.com/anishathalye/obfuscated-gradients/tree/master/defensegan
+  #venue: ICLR 2018
+  #venue_date: 2018-04-30
+  #dataset: MNIST
+  #threat_model: $$\ell_2 (\epsilon = \text{unspecified})$$
+  #natural: 99.7% accuracy
+  #claims: >
+    #92% accuracy
+  #analyses:
+    #- claims: 55% accuracy
+      #citation: ACW18
+      #url: https://arxiv.org/abs/1802.00420
+      #code: https://github.com/anishathalye/obfuscated-gradients/tree/master/defensegan
