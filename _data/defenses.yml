@@ -55,7 +55,7 @@
   name: Deflecting Adversarial Attacks with Pixel Deflection
   url: https://arxiv.org/abs/1801.08926
   authors: Prakash et al.
-  code: https://github.com/dtsip/pixel-deflection/
+  code: https://github.com/anishathalye/pixel-deflection
   venue: CVPR 2018
   venue_date: 2018-06-19
   dataset: ImageNet
@@ -64,16 +64,15 @@
   claims: >
     81% accuracy (on images originally classified correctly)
   analyses:
-    # TODO include once there is a robustml implementation of the attack
-    #- claims: 0% accuracy
-      #citation: AC18
-      #url: https://arxiv.org/abs/1804.03286
-      #code: https://github.com/carlini/pixel-deflection
+    - claims: 0% accuracy
+      citation: AC18
+      url: https://arxiv.org/abs/1804.03286
+      code: https://github.com/anishathalye/pixel-deflection
 -
   name: Defense against Adversarial Attacks Using High-Level Representation Guided Denoiser
   url: https://arxiv.org/abs/1712.02976
   authors: Liao et al.
-  code: https://github.com/dtsip/Guided-Denoise/
+  code: https://github.com/anishathalye/Guided-Denoise
   venue: CVPR 2018
   venue_date: 2018-06-19
   dataset: ImageNet
@@ -82,11 +81,10 @@
   claims: >
     75% accuracy
   analyses:
-    # TODO include once there is a robustml implementation of the attack
-    #- claims: 0% accuracy
-      #citation: AC18
-      #url: https://arxiv.org/abs/1804.03286
-      #code: https://github.com/anishathalye/guided-denoise
+    - claims: 0% accuracy
+      citation: AC18
+      url: https://arxiv.org/abs/1804.03286
+      code: https://github.com/anishathalye/guided-denoise
 -
   name: Towards Deep Learning Models Resistant to Adversarial Attacks
   url: https://arxiv.org/abs/1706.06083
