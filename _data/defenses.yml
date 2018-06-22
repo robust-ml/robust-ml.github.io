@@ -101,10 +101,10 @@
 -
   name: Provable defenses against adversarial examples via the convex outer adversarial polytope
   url: https://arxiv.org/abs/1711.00851
-  authors: Wong and Kolter
+  authors: Wong & Kolter
   code: https://github.com/dtsip/convex_adversarial
   venue: ICML 2018
-  venue_date: 2018-07-10
+  venue_date: 2018-07-11
   dataset: MNIST
   threat_model: $$\ell_\infty (\epsilon = 0.1)$$
   natural: 98.2% accuracy
