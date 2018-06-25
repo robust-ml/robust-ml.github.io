@@ -1,0 +1,60 @@
+---
+---
+/* note: the above --- are important for Jekyll to correctly process this file
+ * as scss */
+
+$branding-blue: #002f55;
+$branding-bluegrey: #95a5a6;
+$branding-lightblue: #99caff;
+
+body {
+  font-family: "Lato", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+h2 {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+}
+
+img, video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 80vh;
+}
+
+.container {
+  margin-bottom: 2rem;
+}
+
+.bg-dark {
+  background-color: $branding-blue !important;
+}
+
+ul.analyses {
+  margin: 0;
+  padding-left: inherit;
+}
+
+.analyses li:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+#logo {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 1rem;
+  color: #aaa;
+  font-size: 0.6rem;
+}
+
+#footer a {
+  color: $branding-lightblue;
+}

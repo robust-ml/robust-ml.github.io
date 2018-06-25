@@ -3,7 +3,7 @@ layout: narrow
 title: Robust ML
 ---
 
-<h1 class="text-center">Robust ML</h1>
+<img id="logo" src="/assets/logo.png" alt="Robust ML">
 
 Robust machine learning is a rapidly growing field that spans diverse
 communities across academia and industry. Consequently, keeping abreast of all
