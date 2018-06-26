@@ -1,6 +1,5 @@
 ---
 layout: narrow
-title: Robust ML
 ---
 
 <img id="logo" src="/assets/logo.png" alt="Robust ML">
