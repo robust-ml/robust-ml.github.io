@@ -16,7 +16,7 @@ activities.
 Advisory Board:
 
 * David Wagner (UC Berkeley)
-* Nicholas Carlini (UC Berkeley)
+* Nicholas Carlini (Google Brain)
 * Percy Liang (Stanford)
 * Zico Kolter (CMU)
 
