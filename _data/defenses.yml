@@ -1,20 +1,3 @@
-# TODO include Distillation once there is a robustml implementation for it
-#-
-  #name: Distillation as a Defense to Adversarial Perturbations against Deep Neural Networks
-  #url: https://arxiv.org/abs/1511.04508
-  #authors: Papernot et al.
-  #code: https://github.com/carlini/breaking_defensive_distillation
-  #venue: S&P 2016
-  #venue_date: 2016-05-23
-  #dataset: CIFAR-10
-  #threat_model: $$\ell_0 (\epsilon = 112)$$
-  #natural: 81% accuracy
-  #claims: >
-    #17% adversary success rate in changing classifier's prediction
-  #analyses:
-    #- claims: 0% accuracy
-      #citation: CW16
-      #code: https://github.com/carlini/breaking_defensive_distillation
 # TODO include MagNet once there is a robustml implementation for it
 #-
   #name: "MagNet: a Two-Pronged Defense against Adversarial Examples"
@@ -51,6 +34,22 @@
       #citation: CW17
       #url: https://arxiv.org/abs/1711.08478
       #code: https://github.com/carlini/breaking_efficient_defenses
+-
+  name: Distillation as a Defense to Adversarial Perturbations against Deep Neural Networks 
+  url: https://arxiv.org/abs/1511.04508 
+  authors: Papernot et al. 
+  code: https://github.com/lengstrom/defensive-distillation 
+  venue: S&P 2016 
+  venue_date: 2016-05-23 
+  dataset: MNIST 
+  threat_model: $$\ell_0 (\epsilon = 112)$$ 
+  natural: 99.51% accuracy 
+  claims: > 
+    0.45% adversary success rate in changing classifier's prediction 
+  analyses: 
+    - claims: 3.6% accuracy 
+      citation: CW16 
+      code: https://github.com/lengstrom/defensive-distillation
 -
   name: Deflecting Adversarial Attacks with Pixel Deflection
   url: https://arxiv.org/abs/1801.08926
