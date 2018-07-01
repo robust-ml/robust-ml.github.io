@@ -20,7 +20,7 @@ Advisory Board:
 * Percy Liang (Stanford)
 * Zico Kolter (CMU)
 
-Editors:
+Maintainers:
 
 * Aleksander Mądry (MIT)
 * Anish Athalye (MIT)
