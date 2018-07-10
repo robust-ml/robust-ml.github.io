@@ -81,6 +81,12 @@ updates to the site are [auditable][commits], and all discussions related to
 content are also publicly visible (as GitHub [issues][issues] / [pull
 requests][pulls]).
 
+## How is this different from other similar resources?
+
+[CleverHans][cleverhans] is a library providing open-source implementations of various known attacks. This is an important resource serving as a baseline for new defenses to be tested against. However, testing against a static attack collection is not sufficient to guarantee security. Defenses are often bypassed by adaptive attacks that are designed to target that specific defense. The goal of robustML is to provide a place for this adaptive analysis to happen. We will rely purely on third-party code, only providing a simple [API][robustml] ourselves.
+
+[robust.vision][robust vision] maintains a comparison between existing defenses by evaluating each one of them against all currently known attacks. This provides an overview of the relative power of known attacks and defenses. However, it does not fully capture the adaptive nature of evaluating new defenses. Defenses often appear effective by resisting all previously known attacks but can be completely bypassed by new, adaptive ones. Moreover, robust.vision requires a relatively strict interface to allow running an all-vs-all evaluation. Our interface requirements are minimal to avoid restricting the power of new attacks.
+
 [source]: https://github.com/robust-ml/robust-ml.github.io
 [commits]: https://github.com/robust-ml/robust-ml.github.io/commits/master
 [defenses]: /defenses/
@@ -93,3 +99,5 @@ requests][pulls]).
 [datasets]: https://github.com/robust-ml/robustml/blob/master/robustml/dataset.py
 [attack]: https://github.com/robust-ml/robustml/blob/master/robustml/attack.py
 [run]: https://github.com/robust-ml/robustml/blob/master/robustml/evaluate.py
+[cleverhans]: https://github.com/tensorflow/cleverhans
+[robust vision]: https://robust.vision/
