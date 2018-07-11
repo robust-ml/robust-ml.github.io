@@ -41,6 +41,12 @@ By default, we list a single claim from the paper (for the “largest” dataset
 Authors can list up to 3 claims, with a single claim allowed for a (dataset,
 threat model) pair.
 
+## Why is defense X missing?
+
+The defense is either not open-sourced or no one has implemented the [robustML
+API][robustml] yet. Since this is a community-run website we can't expect it to be 100%
+complete. Maybe you can implement the defense and/or the API and add it to the list!
+
 ## How are analyses chosen?
 
 We list all analyses that [implement the robustml attack interface][attack] to
