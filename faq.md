@@ -81,11 +81,21 @@ updates to the site are [auditable][commits], and all discussions related to
 content are also publicly visible (as GitHub [issues][issues] / [pull
 requests][pulls]).
 
-## How is this different from other similar resources?
+## How is this different from the other existing resources on robust ML?
 
-[CleverHans][cleverhans] is a library providing open-source implementations of various known attacks. This is an important resource serving as a baseline for new defenses to be tested against. However, testing against a static attack collection is not sufficient to guarantee security. Defenses are often bypassed by adaptive attacks that are designed to target that specific defense. The goal of robustML is to provide a place for this adaptive analysis to happen. We will rely purely on third-party code, only providing a simple [API][robustml] ourselves.
+[CleverHans][cleverhans] is a library providing open-source implementations of
+various known attack methods. This is an important resource that provides us
+with a broad set of tools useful in working on robust ML. However, the key goal
+of robust-ml.org, reflecting the current progress on key datasets and threat
+models, is not a part of CleverHans's focus.
 
-[robust.vision][robust vision] maintains a comparison between existing defenses by evaluating each one of them against all currently known attacks. This provides an overview of the relative power of known attacks and defenses. However, it does not fully capture the adaptive nature of evaluating new defenses. Defenses often appear effective by resisting all previously known attacks but can be completely bypassed by new, adaptive ones. Moreover, robust.vision requires a relatively strict interface to allow running an all-vs-all evaluation. Our interface requirements are minimal to avoid restricting the power of new attacks beyond what is required by the threat model.
+[robust.vision][robust vision] maintains a comparison between existing defenses
+by evaluating each one of them against all currently known attacks. This
+provides a useful overview of the relative power of known attacks and defenses.
+However, due to its focus on evaluating defenses only on known, static attacks,
+it might not necessarily reflect the actual progress on the defense front.
+After all, defenses often appear effective by resisting all previously known
+attacks but can be completely bypassed by new, adaptive ones.
 
 [source]: https://github.com/robust-ml/robust-ml.github.io
 [commits]: https://github.com/robust-ml/robust-ml.github.io/commits/master
