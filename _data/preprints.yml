@@ -1,1 +1,16 @@
-# you can use Markdown syntax in here
+# these should be in order of publication date
+-
+  name: Adversarial Logit Pairing
+  url: https://arxiv.org/abs/1803.06373
+  authors: Kannan et al.
+  code: https://github.com/labsix/adversarial-logit-pairing-analysis
+  dataset: ImageNet
+  threat_model: $$\ell_\infty (\epsilon = 16/255)$$
+  natural: 72%
+  claims: >
+    27.9% accuracy
+  analyses:
+    - claims: 0.1% accuracy
+      citation: EIA18
+      url: https://arxiv.org/abs/1807.10272
+      code: https://github.com/labsix/adversarial-logit-pairing-analysis
