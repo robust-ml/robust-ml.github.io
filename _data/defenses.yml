@@ -35,20 +35,21 @@
       #url: https://arxiv.org/abs/1711.08478
       #code: https://github.com/carlini/breaking_efficient_defenses
 -
-  name: Distillation as a Defense to Adversarial Perturbations against Deep Neural Networks 
-  url: https://arxiv.org/abs/1511.04508 
-  authors: Papernot et al. 
-  code: https://github.com/lengstrom/defensive-distillation 
-  venue: S&P 2016 
-  venue_date: 2016-05-23 
-  dataset: MNIST 
-  threat_model: $$\ell_0 (\epsilon = 112)$$ 
-  natural: 99.51% accuracy 
-  claims: > 
-    0.45% adversary success rate in changing classifier's prediction 
-  analyses: 
-    - claims: 3.6% accuracy 
-      citation: CW16 
+  name: Distillation as a Defense to Adversarial Perturbations against Deep Neural Networks
+  url: https://arxiv.org/abs/1511.04508
+  authors: Papernot et al.
+  code: https://github.com/lengstrom/defensive-distillation
+  venue: S&P 2016
+  venue_date: 2016-05-23
+  dataset: MNIST
+  threat_model: $$\ell_0 (\epsilon = 112)$$
+  natural: 99.51% accuracy
+  claims: >
+    0.45% adversary success rate in changing classifier's prediction
+  analyses:
+    - claims: 3.6% accuracy
+      citation: CW16
+      url: https://arxiv.org/abs/1608.04644
       code: https://github.com/lengstrom/defensive-distillation
 -
   name: Deflecting Adversarial Attacks with Pixel Deflection
