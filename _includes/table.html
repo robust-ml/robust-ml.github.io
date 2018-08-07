@@ -26,7 +26,7 @@
         <td>
           <ul class="analyses">
           {% for analysis in row.analyses %}
-            <li>{{ analysis.claims }} [<a href="{{ analysis.url }}">{{ analysis.citation }}</a>] (<a href="{{ analysis.code }}">code</a>)</li>
+            <li>{{ analysis.claims }} [<a href="{{ analysis.url }}">{{ analysis.citation }}</a>] (<a href="{{ analysis.code }}">code</a>){% if analysis.note %} <span class='footnote' data-toggle="tooltip" title="{{ analysis.note }}"></span>{% endif %}</li>
           {% endfor %}
         </td>
       </tr>
@@ -47,6 +47,7 @@
     }).on('responsive-display', function() {
       MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
     });
+    $('[data-toggle="tooltip"]').tooltip()
   });
 </script>
 <noscript>

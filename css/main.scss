@@ -58,3 +58,18 @@ ul.analyses {
 #footer a {
   color: $branding-lightblue;
 }
+
+body {
+  counter-reset: footnotecounter;
+}
+
+span.footnote:before {
+  counter-increment: footnotecounter;
+  content: counter(footnotecounter);
+  position: relative;
+  top: -0.4em;
+}
+
+span.footnote {
+  color: $branding-bluegrey;
+}

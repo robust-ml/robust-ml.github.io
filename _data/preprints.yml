@@ -14,3 +14,8 @@
       citation: EIA18
       url: https://arxiv.org/abs/1807.10272
       code: https://github.com/labsix/adversarial-logit-pairing-analysis
+      note: >
+        This analysis has been performed on the ImageNet 64x64 model released
+        at
+        https://&#8203;github.com/&#8203;tensorflow/&#8302;models/&#8302;tree/&#8302;master/&#8302;research/&#8302;adversarial_logit_pairing.
+        The authors claim to have unreleased models that may be more secure.
