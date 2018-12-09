@@ -216,3 +216,14 @@
       #citation: ACW18
       #url: https://arxiv.org/abs/1802.00420
       #code: https://github.com/anishathalye/obfuscated-gradients/tree/master/defensegan
+-
+  name: Towards the first adversarially robust neural network model on MNIST
+  url: https://arxiv.org/abs/1805.09190
+  authors: Schott et al.
+  code: https://github.com/bethgelab/AnalysisBySynthesis
+  venue: NeurIPS SECML 2018
+  venue_date: 2018-12-07
+  dataset: MNIST
+  threat_model: $$\ell_2 (\epsilon = 1.5)$$
+  natural: 99%
+  claims: 80% accuracy
