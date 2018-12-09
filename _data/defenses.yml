@@ -225,5 +225,5 @@
   venue_date: 2018-12-07
   dataset: MNIST
   threat_model: $$\ell_2 (\epsilon = 1.5)$$
-  natural: 99%
+  natural: 99% accuracy
   claims: 80% accuracy
