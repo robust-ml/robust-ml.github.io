@@ -227,3 +227,14 @@
   threat_model: $$\ell_2 (\epsilon = 1.5)$$
   natural: 99% accuracy
   claims: 80% accuracy
+-
+  name: Provable Robustness of ReLU networks via Maximization of Linear Regions
+  url: https://arxiv.org/abs/1810.07481
+  authors: Croce et al.
+  code: https://github.com/max-andr/provable-robustness-max-linear-regions
+  venue: AISTATS 2019
+  venue_date: 2019-04-16
+  dataset: MNIST
+  threat_model: $$\ell_\infty (\epsilon = 0.1)$$
+  natural: 98.81% accuracy
+  claims: 96.4% accuracy (on first 1000 test points)
