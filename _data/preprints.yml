@@ -31,4 +31,13 @@
   claims: >
     78.2% accuracy
   analyses:
-    
+-
+  name: Adversarial Defense by Restricting the Hidden Space of Deep Neural Networks
+  upload_date: 2019-04-01
+  url: https://arxiv.org/abs/1904.00887
+  authors: Mustafa et al.
+  code: https://github.com/aamir-mustafa/pcl-adversarial-defense
+  dataset: CIFAR-10
+  threat_model: $$\ell_\infty (\epsilon = 8/255)$$
+  natural: 90.62% accuracy
+  claims: 32.32% accuracy
