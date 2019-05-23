@@ -1,9 +1,11 @@
 <table id="table" cellspacing="0" class="table table-striped table-bordered" style="width: 100%;">
   <thead>
     <tr>
-      <th data-priority="1" data-orderable="false">Defense</th>
       {% if include.published %}
+        <th data-priority="1" data-orderable="false">Defense</th>
         <th data-priority="7">Venue</th>
+      {% else %}
+        <th data-priority="1">Defense</th>
       {% endif %}
       <th data-priority="3">Dataset</th>
       <th data-priority="4">Threat Model</th>
@@ -15,7 +17,13 @@
   <tbody>
     {% for row in include.src %}
       <tr>
-        <td><a href="{{ row.url }}">{{ row.name }}</a> ({{ row.authors }}) (<a href="{{ row.code }}">code</a>)</td>
+        {% if include.published %}
+        <td>
+        {% else %}
+          <td data-sort="{{ row.upload_date }}">
+        {% endif %}
+          <a href="{{ row.url }}">{{ row.name }}</a> ({{ row.authors }}) (<a href="{{ row.code }}">code</a>)
+        </td>
         {% if include.published %}
           <td data-sort="{{ row.venue_date }}">{{ row.venue }}</td>
         {% endif %}
@@ -40,7 +48,11 @@
       responsive: true,
       paging: false,
       info: false,
-      order: [[1, 'desc']],
+      {% if include.published %}
+        order: [[1, 'desc']],
+      {% else %}
+        order: [[0, 'desc']],
+      {% endif %}
       drawCallback: function(settings) {
         MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
       },

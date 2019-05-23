@@ -1,7 +1,7 @@
-# these should be in order of publication date
 -
   name: Adversarial Logit Pairing
   url: https://arxiv.org/abs/1803.06373
+  upload_date: 2018-03-16
   authors: Kannan et al.
   code: https://github.com/labsix/adversarial-logit-pairing-analysis
   dataset: ImageNet
@@ -19,10 +19,10 @@
         at
         https://&#8203;github.com/&#8203;tensorflow/&#8302;models/&#8302;tree/&#8302;master/&#8302;research/&#8302;adversarial_logit_pairing.
         The authors claim to have unreleased models that may be more secure.
-        
 -
   name: Combatting and detecting FGSM and PGD adversarial noise
   url: https://jngannon.github.io/FGSM_Article
+  upload_date: 2019-01-25
   authors: James Gannon
   code: https://github.com/jngannon/robustml-test-analysis
   dataset: MNIST
