@@ -238,3 +238,14 @@
   threat_model: $$\ell_\infty (\epsilon = 0.1)$$
   natural: 98.81% accuracy
   claims: 96.4% accuracy (on first 1000 test points)
+-
+  name: Harnessing the Vulnerability of Latent Layers in Adversarially Trained Models
+  url: https://arxiv.org/abs/1905.05186
+  authors: Sinha et al.
+  code: https://github.com/conference-submission-anon/LAT_adversarial_robustness
+  venue: IJCAI 2019
+  venue_date: 2019-08-10
+  dataset: CIFAR-10
+  threat_model: $$\ell_\infty (\epsilon = 0.03)$$
+  natural: 87.8% accuracy
+  claims: 53.82% accuracy
