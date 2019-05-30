@@ -63,8 +63,8 @@ papers. If you wish to add a new threat model, please open an [issue][issues].
 ## Which datasets are considered?
 
 We include the datasets [defined in the robustml framework][datasets]
-(currently MNIST, CIFAR-10, and ImageNet ILSVRC 2012). If you wish to add a new
-dataset, please open an [issue][issues].
+(currently MNIST, Fashion-MNIST, CIFAR-10, GTS, and ImageNet ILSVRC 2012). If
+you wish to add a new dataset, please open an [issue][issues].
 
 ## Why only vision?
 
