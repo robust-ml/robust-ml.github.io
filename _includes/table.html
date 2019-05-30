@@ -46,6 +46,7 @@
   $(document).ready(function() {
     $('#table').DataTable({
       responsive: true,
+      fixedHeader: true,
       paging: false,
       info: false,
       {% if include.published %}
