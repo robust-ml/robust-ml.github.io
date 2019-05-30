@@ -236,15 +236,15 @@
     - dataset: MNIST
       threat_model: $$\ell_\infty (\epsilon = 0.1)$$
       natural: 98.81% accuracy
-      claim: 96.4% accuracy (on first 1000 test points)
+      claim: (on first 1000 test points) 96.4% accuracy (empirical), 96.37% accuracy (certified)
     - dataset: FMNIST
       threat_model: $$\ell_\infty (\epsilon = 0.1)$$
       natural: 85.50% accuracy
-      claim: 73.4% accuracy (on first 1000 test points)
+      claim: (on first 1000 test points) 73.4% accuracy (empirical), 69.3% accuracy (certified)
     - dataset: GTS
       threat_model: $$\ell_\infty (\epsilon = 0.2)$$
       natural: 84.65% accuracy
-      claim: 67.9% accuracy (on first 1000 test points)
+      claim: (on first 1000 test points) 67.9% accuracy (empirical), 66.8% accuracy (certified)
 -
   name: Harnessing the Vulnerability of Latent Layers in Adversarially Trained Models
   url: https://arxiv.org/abs/1905.05186
