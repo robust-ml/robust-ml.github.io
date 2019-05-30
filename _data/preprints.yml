@@ -4,40 +4,41 @@
   upload_date: 2018-03-16
   authors: Kannan et al.
   code: https://github.com/labsix/adversarial-logit-pairing-analysis
-  dataset: ImageNet
-  threat_model: $$\ell_\infty (\epsilon = 16/255)$$
-  natural: 72%
-  claims: >
-    27.9% accuracy
-  analyses:
-    - claims: 0.1% accuracy
-      citation: EIA18
-      url: https://arxiv.org/abs/1807.10272
-      code: https://github.com/labsix/adversarial-logit-pairing-analysis
-      note: >
-        This analysis has been performed on the ImageNet 64x64 model released
-        at
-        https://&#8203;github.com/&#8203;tensorflow/&#8302;models/&#8302;tree/&#8302;master/&#8302;research/&#8302;adversarial_logit_pairing.
-        The authors claim to have unreleased models that may be more secure.
+  claims:
+    - dataset: ImageNet
+      threat_model: $$\ell_\infty (\epsilon = 16/255)$$
+      natural: 72%
+      claim: 27.9% accuracy
+      analyses:
+        - claim: 0.1% accuracy
+          citation: EIA18
+          url: https://arxiv.org/abs/1807.10272
+          code: https://github.com/labsix/adversarial-logit-pairing-analysis
+          note: >
+            This analysis has been performed on the ImageNet 64x64 model released
+            at
+            https://&#8203;github.com/&#8203;tensorflow/&#8302;models/&#8302;tree/&#8302;master/&#8302;research/&#8302;adversarial_logit_pairing.
+            The authors claim to have unreleased models that may be more secure.
 -
   name: Combatting and detecting FGSM and PGD adversarial noise
   url: https://jngannon.github.io/FGSM_Article
   upload_date: 2019-01-25
   authors: James Gannon
   code: https://github.com/jngannon/robustml-test-analysis
-  dataset: MNIST
-  threat_model: $$\ell_\infty (\epsilon = 0.1)$$
-  natural: 98.2%
-  claims: >
-    78.2% accuracy
-  analyses:
+  claims:
+    - dataset: MNIST
+      threat_model: $$\ell_\infty (\epsilon = 0.1)$$
+      natural: 98.2%
+      claim: 78.2% accuracy
+      analyses:
 -
   name: Adversarial Defense by Restricting the Hidden Space of Deep Neural Networks
   upload_date: 2019-04-01
   url: https://arxiv.org/abs/1904.00887
   authors: Mustafa et al.
   code: https://github.com/aamir-mustafa/pcl-adversarial-defense
-  dataset: CIFAR-10
-  threat_model: $$\ell_\infty (\epsilon = 8/255)$$
-  natural: 90.62% accuracy
-  claims: 32.32% accuracy
+  claims:
+    - dataset: CIFAR&#8209;10
+      threat_model: $$\ell_\infty (\epsilon = 8/255)$$
+      natural: 90.62% accuracy
+      claim: 32.32% accuracy
