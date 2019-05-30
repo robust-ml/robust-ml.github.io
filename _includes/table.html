@@ -51,8 +51,13 @@
       fixedHeader: true,
       paging: false,
       info: false,
-      order: [[0, 'asc']],
-      rowsGroup: [0],
+      {% if include.published %}
+        rowsGroup: [0, 1],
+        order: [[0, 'desc']], // XXX not sure why this has to be desc, but it seems to work
+      {% else %}
+        order: [[0, 'asc']],
+        rowsGroup: [0],
+      {% endif %}
       drawCallback: function(settings) {
         MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
       },
