@@ -2,13 +2,13 @@
   <thead>
     <tr>
       {% if include.published %}
-        <th data-priority="1" data-orderable="false">Defense</th>
-        <th data-priority="7">Venue</th>
+        <th data-priority="1">Defense</th>
+        <th data-priority="7" data-orderable="false">Venue</th>
       {% else %}
         <th data-priority="1">Defense</th>
       {% endif %}
-      <th data-priority="3">Dataset</th>
-      <th data-priority="4">Threat Model</th>
+      <th data-priority="3" data-orderable="false">Dataset</th>
+      <th data-priority="4" data-orderable="false">Threat Model</th>
       <th data-priority="6" data-orderable="false">Natural Accuracy</th>
       <th data-priority="5" data-orderable="false">Claims</th>
       <th data-priority="2" data-orderable="false">Analyses</th>
@@ -16,28 +16,30 @@
   </thead>
   <tbody>
     {% for row in include.src %}
-      <tr>
-        {% if include.published %}
-        <td>
-        {% else %}
-          <td data-sort="{{ row.upload_date }}">
-        {% endif %}
-          <a href="{{ row.url }}">{{ row.name }}</a> ({{ row.authors }}) (<a href="{{ row.code }}">code</a>)
-        </td>
-        {% if include.published %}
-          <td data-sort="{{ row.venue_date }}">{{ row.venue }}</td>
-        {% endif %}
-        <td>{{ row.dataset }}</td>
-        <td>{{ row.threat_model }}</td>
-        <td>{{ row.natural | markdownify }}</td>
-        <td>{{ row.claims | markdownify }}</td>
-        <td>
-          <ul class="analyses">
-          {% for analysis in row.analyses %}
-            <li>{{ analysis.claims }} [<a href="{{ analysis.url }}">{{ analysis.citation }}</a>] (<a href="{{ analysis.code }}">code</a>){% if analysis.note %} <span class='footnote' data-toggle="tooltip" title="{{ analysis.note }}"></span>{% endif %}</li>
-          {% endfor %}
-        </td>
-      </tr>
+      {% for claim in row.claims %}
+        <tr>
+          {% if include.published %}
+            <td data-sort="{{ row.venue_date }}">
+          {% else %}
+            <td data-sort="{{ row.upload_date }}">
+          {% endif %}
+            <a href="{{ row.url }}">{{ row.name }}</a> ({{ row.authors }}) (<a href="{{ row.code }}">code</a>)
+          </td>
+          {% if include.published %}
+            <td>{{ row.venue }}</td>
+          {% endif %}
+          <td>{{ claim.dataset }}</td>
+          <td>{{ claim.threat_model }}</td>
+          <td>{{ claim.natural | markdownify }}</td>
+          <td>{{ claim.claim | markdownify }}</td>
+          <td>
+            <ul class="analyses">
+            {% for analysis in claim.analyses %}
+              <li>{{ analysis.claim }} [<a href="{{ analysis.url }}">{{ analysis.citation }}</a>] (<a href="{{ analysis.code }}">code</a>){% if analysis.note %} <span class='footnote' data-toggle="tooltip" title="{{ analysis.note }}"></span>{% endif %}</li>
+            {% endfor %}
+          </td>
+        </tr>
+      {% endfor %}
     {% endfor %}
   </tbody>
 </table>
@@ -46,12 +48,15 @@
   $(document).ready(function() {
     $('#table').DataTable({
       responsive: true,
+      fixedHeader: true,
       paging: false,
       info: false,
       {% if include.published %}
-        order: [[1, 'desc']],
+        rowsGroup: [0, 1],
+        order: [[0, 'desc']], // XXX not sure why this has to be desc, but it seems to work
       {% else %}
-        order: [[0, 'desc']],
+        order: [[0, 'asc']],
+        rowsGroup: [0],
       {% endif %}
       drawCallback: function(settings) {
         MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
