@@ -242,7 +242,7 @@
       natural: 85.50% accuracy
       claim: (on first 1000 test points) 73.4% accuracy (empirical), 69.3% accuracy (certified)
     - dataset: GTS
-      threat_model: $$\ell_\infty (\epsilon = 0.2)$$
+      threat_model: $$\ell_2 (\epsilon = 0.2)$$
       natural: 84.65% accuracy
       claim: (on first 1000 test points) 67.9% accuracy (empirical), 66.8% accuracy (certified)
 -
