@@ -236,7 +236,7 @@
     - dataset: MNIST
       threat_model: $$\ell_\infty (\epsilon = 0.1)$$
       natural: 98.81% accuracy
-      claim: (on first 1000 test points) 96.4% accuracy (empirical), 96.37% accuracy (certified)
+      claim: 96.42% accuracy (empirical), 96.37% accuracy (certified)
     - dataset: FMNIST
       threat_model: $$\ell_\infty (\epsilon = 0.1)$$
       natural: 85.50% accuracy
