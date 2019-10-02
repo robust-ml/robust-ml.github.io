@@ -1,3 +1,17 @@
+- name: Bandlimiting Neural Networks Against Adversarial Attacks
+  url: https://arxiv.org/abs/1905.12797
+  upload_date: 2019-05-30
+  authors: Lin et al.
+  code: https://github.com/YupingLin171/PostAvgDefense
+  claims:
+    - dataset: ImageNet
+      threat_model: $$\ell_\infty (\epsilon = 8/255)$$
+      natural: 77.32% accuracy
+      claim: 76.06% accuracy
+    - dataset: CIFAR&#8209;10
+      threat_model: $$\ell_\infty (\epsilon = 8/255)$$
+      natural: 92.55% accuracy
+      claim: 88.41% accuracy
 -
   name: Adversarial Logit Pairing
   url: https://arxiv.org/abs/1803.06373
