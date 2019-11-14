@@ -257,3 +257,19 @@
       threat_model: $$\ell_\infty (\epsilon = 0.03)$$
       natural: 87.8% accuracy
       claim: 53.82% accuracy
+-
+  name: Provably Robust Boosted Decision Stumps and Trees against Adversarial Attacks
+  url: https://arxiv.org/abs/1906.03526
+  authors: Andriushchenko & Hein
+  code: https://github.com/max-andr/provably-robust-boosting
+  venue: NeurIPS 2019
+  venue_date: 2019-12-10
+  claims:
+    - dataset: MNIST
+      threat_model: $$\ell_\infty (\epsilon = 0.3)$$
+      natural: 97.32% accuracy
+      claim: 87.54% accuracy (certified)
+    - dataset: FMNIST
+      threat_model: $$\ell_\infty (\epsilon = 0.1)$$
+      natural: 85.85% accuracy
+      claim: 76.83% accuracy (certified)
