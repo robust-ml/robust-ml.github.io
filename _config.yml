@@ -20,5 +20,5 @@ exclude:
   - Gemfile.lock
   - README.md
 
-plugins:
+plugins_dir:
   - "jekyll-github-metadata"
