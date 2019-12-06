@@ -8,10 +8,20 @@
       threat_model: $$\ell_\infty (\epsilon = 8/255)$$
       natural: 77.32% accuracy
       claim: 76.06% accuracy
+      analyses:
+        - claim: 0.4% accuracy
+          citation: ACF+19
+          url: https://arxiv.org/abs/1912.00049
+          code: https://github.com/max-andr/square-attack
     - dataset: CIFAR&#8209;10
       threat_model: $$\ell_\infty (\epsilon = 8/255)$$
       natural: 92.55% accuracy
       claim: 88.41% accuracy
+      analyses:
+        - claim: 15.8% accuracy
+          citation: ACF+19
+          url: https://arxiv.org/abs/1912.00049
+          code: https://github.com/max-andr/square-attack
 -
   name: Adversarial Logit Pairing
   url: https://arxiv.org/abs/1803.06373
