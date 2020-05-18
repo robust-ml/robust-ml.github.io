@@ -19,6 +19,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - vendor
 
 plugins_dir:
   - "jekyll-github-metadata"

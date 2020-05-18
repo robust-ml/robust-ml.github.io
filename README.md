@@ -1,4 +1,4 @@
-# Adversarial Example Defenses
+# Adversarial Example Defenses [[![Build Status](https://travis-ci.com/robust-ml/robust-ml.github.io.svg?branch=master)](https://travis-ci.com/robust-ml/robust-ml.github.io)]
 
 A catalog of defenses against adversarial examples, paired with attacks that
 break them (where applicable).
