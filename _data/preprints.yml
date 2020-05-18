@@ -45,7 +45,7 @@
             The authors claim to have unreleased models that may be more secure.
 -
   name: Combatting and detecting FGSM and PGD adversarial noise
-  url: https://jngannon.github.io/FGSM_Article
+  url: https://jngannon.github.io/research/
   upload_date: 2019-01-25
   authors: James Gannon
   code: https://github.com/jngannon/robustml-test-analysis
