@@ -1,12 +1,15 @@
 language: ruby
+dist: bionic
+
 before_install:
   - gem update --system # necessary, see https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html
+  - sudo .ci/cert-workaround
 before_script:
   - gem install html-proofer
 script:
   - bundle exec jekyll build
   - >-
-    htmlproofer ./_site
+    travis_retry htmlproofer ./_site
     --check-html
     --check-favicon
     --enforce-https
