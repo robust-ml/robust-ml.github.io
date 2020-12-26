@@ -1,4 +1,4 @@
-# Adversarial Example Defenses [[![Build Status](https://travis-ci.com/robust-ml/robust-ml.github.io.svg?branch=master)](https://travis-ci.com/robust-ml/robust-ml.github.io)]
+# Adversarial Example Defenses [![Build Status](https://github.com/robust-ml/robust-ml.github.io/workflows/CI/badge.svg)](https://github.com/robust-ml/robust-ml.github.io/actions?query=workflow%3ACI)
 
 A catalog of defenses against adversarial examples, paired with attacks that
 break them (where applicable).
