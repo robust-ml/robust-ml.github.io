@@ -8,7 +8,7 @@ permalink: pretty
 future: true
 timezone: America/New_York
 repository: "robust-ml/robust-ml.github.io"
-url: https://www.robust-ml.org
+url: https://robust-ml.github.io
 title: "Robust ML"
 logo: /assets/thumbnail.png
 description: "A community-run reference for state-of-the-art adversarial example defenses."
